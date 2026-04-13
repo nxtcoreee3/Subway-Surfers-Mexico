@@ -1,6 +1,52 @@
 <!-- Ultimate Game Stash file--> 
 <!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
 
+<!-- Top Notification -->
+<style>
+#nxtcoreee3-notification {
+  position: fixed;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20,20,20,0.95);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 999px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  font-family: sans-serif;
+  font-size: 15px;
+  z-index: 999999;
+  transition: top 0.5s ease;
+}
+
+#nxtcoreee3-notification img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+</style>
+
+<div id="nxtcoreee3-notification">
+ <img src="https://raw.githubusercontent.com/nxtcoreee3/Drive-Mad/main/IMG_0556.JPG" alt="profile">
+  <span>Cracked by nxtcoreee3</span>
+</div>
+
+<script>
+const notif = document.getElementById("nxtcoreee3-notification");
+
+setTimeout(() => {
+  notif.style.top = "20px"; // slide down
+}, 300);
+
+setTimeout(() => {
+  notif.style.top = "-120px"; // slide up
+}, 5300);
+</script>
 
 <base href="https://cdn.jsdelivr.net/gh/bubbls/subwaysurfersmerge/">
 <html>
